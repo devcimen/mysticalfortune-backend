@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
 import dotenv from 'dotenv';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -23,13 +23,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Check if we are in a browser environment before initializing analytics
-if (typeof window !== 'undefined') {
-    import("firebase/analytics").then(({ getAnalytics }) => {
-        const analytics = getAnalytics(app);
-    }).catch(() => {
-        console.warn("Analytics initialization skipped (unsupported in Node.js)");
-    });
-}
+// Initialize Firebase Auth
+const auth = getAuth(app);
 
-export default app;
+export default auth;
