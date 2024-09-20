@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import cors from 'cors';
 import bodyParser from 'body-parser';
 import authRoutes from './routes/authRoutes.js';
 import gameRoutes from './routes/gameRoutes.js';
@@ -10,6 +11,9 @@ dotenv.config();
 // Initialize express
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+// Enable CORS
+app.use(cors());
 
 // Middleware
 app.use(bodyParser.json());

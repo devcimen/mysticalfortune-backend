@@ -3,11 +3,11 @@
 // Each reel is an array of four symbols. 
 // The game has five reels in total.
 const reels = [
-    ['Rune Symbol', 'Radiant', 'Ancient Scrolls', 'Book', 'Rune Symbol', 'Radiant', 'Ancient Scrolls', 'Book', 'Arcane Symbol', 'Sorceress', 'Ring', 'Elven Warrior', 'Divine Wings', 'Sacred Light', 'Rune Symbol', 'Ancient Scrolls', 'Radiant', 'Book'],
-    ['Rune Symbol', 'Radiant', 'Ancient Scrolls', 'Book', 'Arcane Symbol', 'Sorceress', 'Ring', 'Radiant Elf', 'Angel girl', 'Elven Warrior', 'Divine Wings', 'Sacred Light', 'Rune Symbol', 'Ancient Scrolls', 'Radiant', 'Book'],
-    ['Rune Symbol', 'Radiant', 'Ancient Scrolls', 'Book', 'Arcane Symbol', 'Sorceress', 'Ring', 'Elven Warrior', 'Radiant Elf', 'Angel girl', 'Divine Wings', 'Sacred Light', 'Rune Symbol', 'Ancient Scrolls', 'Radiant', 'Book'],
-    ['Rune Symbol', 'Radiant', 'Ancient Scrolls', 'Book', 'Arcane Symbol', 'Sorceress', 'Ring', 'Radiant Elf', 'Elven Warrior', 'Angel girl', 'Divine Wings', 'Sacred Light', 'Rune Symbol', 'Ancient Scrolls', 'Radiant', 'Book'],
-    ['Rune Symbol', 'Radiant', 'Ancient Scrolls', 'Book', 'Arcane Symbol', 'Sorceress', 'Ring', 'Radiant Elf', 'Elven Warrior', 'Angel girl', 'Divine Wings', 'Sacred Light', 'Rune Symbol', 'Ancient Scrolls', 'Radiant', 'Book']
+    ['rune', 'radiant', 'scrolls', 'book', 'rune', 'radiant', 'scrolls', 'book', 'arcane', 'sorceress', 'ring', 'elvenwarrior', 'divinewings', 'sacredlight', 'rune', 'scrolls', 'radiant', 'book'],
+    ['rune', 'radiant', 'scrolls', 'book', 'arcane', 'sorceress', 'ring', 'radiantelf', 'angelgirl', 'elvenwarrior', 'divinewings', 'sacredlight', 'rune', 'scrolls', 'radiant', 'book'],
+    ['rune', 'radiant', 'scrolls', 'book', 'arcane', 'sorceress', 'ring', 'elvenwarrior', 'radiantelf', 'Angel girl', 'divinewings', 'sacredlight', 'rune', 'scrolls', 'radiant', 'book'],
+    ['rune', 'radiant', 'scrolls', 'book', 'arcane', 'sorceress', 'ring', 'radiantelf', 'elvenwarrior', 'Angel girl', 'divinewings', 'sacredlight', 'rune', 'scrolls', 'radiant', 'book'],
+    ['rune', 'radiant', 'scrolls', 'book', 'arcane', 'sorceress', 'ring', 'radiantelf', 'elvenwarrior', 'Angel girl', 'divinewings', 'sacredlight', 'rune', 'scrolls', 'radiant', 'book']
 ];
 
 // Paylines
@@ -67,18 +67,18 @@ const paylines = [
 // The symbols multipliers determine the payout of the game.
 // Each symbol has a corresponding multiplier.
 const symbolMultipliers = {
-    'Sacred Light': 100, // Legendary
-    'Angel girl': 80,   // Legendary
-    'Divine Wings': 50, // Epic
-    'Elven Warrior': 40, // Epic
-    'Radiant Elf': 40,  // Epic
-    'Arcane Symbol': 10, // Uncommon
-    'Sorceress': 10,    // Uncommon
-    'Ring': 5,         // Uncommon
-    'Rune Symbol': 2,   // Common
-    'Radiant': 2,       // Common
-    'Ancient Scrolls': 2, // Common
-    'Book': 2           // Common
+    'sacredlight': 100, // Legendary
+    'angelgirl': 80,   // Legendary
+    'divinewings': 50, // Epic
+    'elvenwarrior': 40, // Epic
+    'radiantelf': 40,  // Epic
+    'arcane': 10, // Uncommon
+    'sorceress': 10,    // Uncommon
+    'ring': 5,         // Uncommon
+    'rune': 2,   // Common
+    'radiant': 2,       // Common
+    'ancientscrolls': 2, // Common
+    'book': 2           // Common
 };
 
 // Jackpot
